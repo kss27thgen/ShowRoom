@@ -10,7 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_26_093823) do
+ActiveRecord::Schema.define(version: 2019_01_26_113824) do
+
+  create_table "room_images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.text "image"
+    t.bigint "room_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["room_id"], name: "index_room_images_on_room_id"
+  end
+
+  create_table "rooms", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "since"
+    t.string "area"
+    t.string "agent"
+    t.string "zipcode"
+    t.string "address"
+    t.text "description"
+    t.text "facility"
+    t.integer "category"
+    t.integer "type"
+    t.integer "rent"
+    t.integer "ward"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -31,4 +56,5 @@ ActiveRecord::Schema.define(version: 2019_01_26_093823) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "room_images", "rooms"
 end
