@@ -1,5 +1,6 @@
 class Room < ApplicationRecord
   has_many :room_images, dependent: :destroy
+  accepts_nested_attributes_for :room_images
 
   enum category: [:戸建て, :マンション, :オフィス]
   enum room_type: [:"1R", :"1K"]

@@ -13,11 +13,15 @@ class RoomsController < ApplicationController
     end
   end
 
+  def index
+    @rooms = Room.all
+  end
+
 
 
 
 private
   def room_params
-    params.require(:room).permit(:name, :since, :area, :agent, :zipcode, :address, :description, :facility, :category, :room_type, :rent, :ward)
+    params.require(:room).permit(:name, :since, :area, :agent, :zipcode, :address, :description, :facility, :category, :room_type, :rent, :ward, room_images_attributes: [:image, :room_id, :id])
   end
 end
