@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_26_113824) do
+ActiveRecord::Schema.define(version: 2019_01_26_142658) do
 
   create_table "room_images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.text "image"
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2019_01_26_113824) do
     t.text "description"
     t.text "facility"
     t.integer "category"
-    t.integer "type"
+    t.integer "room_type"
     t.integer "rent"
     t.integer "ward"
     t.datetime "created_at", null: false
