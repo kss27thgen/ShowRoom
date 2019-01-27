@@ -1,1 +1,7 @@
-= @room.name
+.room_name
+  = @room.name
+.room_image
+  - @images.each do |image|
+    = image_tag image.image.url
+
+= link_to "編集", edit_room_path(@room)
