@@ -1,6 +1,4 @@
 %p
   - @rooms.each do |room|
-    = room.name
-    = image_tag room.room_images.first.image.url
-
-
+    = link_to room.name, room_path(room)
+    = "#{room.ward}区"
