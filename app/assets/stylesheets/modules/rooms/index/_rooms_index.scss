@@ -1,0 +1,22 @@
+.rooms-index {
+  display: flex;
+  &_sidebar {
+    width: 100vw-75;
+    background: #FFFACD;
+  }
+  &_main {
+    width: 100vw-25;
+    background: #FFFFF0;
+  }
+}
+
+
+
+
+
+
+p {
+  color: blue;
+  font-family: "YuKyokasho";
+  font-size: 2rem;
+}

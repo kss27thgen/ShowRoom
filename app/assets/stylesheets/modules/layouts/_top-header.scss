@@ -1,5 +1,5 @@
 .top-header_wrapper {
-  background: lighten($lightgray, 15%);
+  background: lighten($lightgray, 13%);
   .top-header-upper {
     padding-bottom: 3rem;
     &_left {
@@ -39,13 +39,13 @@
         font-size: 1.7rem;
         text-decoration: none;
         color: black;
-        padding: 1.4rem;
+        padding: 1.5rem 4rem;
         height: 5rem;
         line-height: 5rem;
       }
       &-item:hover {
         background: lighten($lightgray, 12%);
-        border-bottom: 1rem solid gray;
+        border-bottom: 0.2rem solid gray;
       }
     }
   }
