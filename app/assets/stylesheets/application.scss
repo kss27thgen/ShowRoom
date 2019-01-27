@@ -1,8 +1,10 @@
 /*config*/
 @import "config/reset";
 @import "config/colors";
+@import "config/clearfix";
 
 /*modules*/
 @import "modules/layouts/bxslider";
+@import "modules/layouts/top-header";
 @import "modules/rooms/rooms_index";
 @import "modules/rooms/rooms_new";
