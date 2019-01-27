@@ -1,10 +1,15 @@
-.slider {
-  padding: 50px;
-  &_item {
-  }
-  &_image {
-    width: 900px;
-    height: 500px;
-    margin: 0 auto;
+.slider-wrapper {
+  background: red;
+  width: 70rem;
+  margin: 3rem auto;
+  padding: 2rem 2rem 0.1rem;
+  .slider {
+    &_item {
+    }
+    &_image {
+      width: 50rem;
+      height: 30rem;
+      margin: 0 auto;
+    }
   }
 }
