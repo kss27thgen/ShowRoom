@@ -2,21 +2,53 @@
   display: flex;
   &_sidebar {
     width: 100vw-80;
-    background: #FFFACD;
+    background: lighten($lightgray, 1%);
   }
   &_main {
     width: 100vw-20;
-    background: #FFFFF0;
+    background: lighten(#FFFFF0, 1%);
+    &-inner {
+      .roomIndex {
+        margin: 9.5rem;
+        background: lighten($lightgray, 15%);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        &-link {
+          text-decoration: none;
+          color: black;
+        }
+        &-item {
+          width: 30rem;
+          height: 30rem;
+          background: lighten($lightgray, 20%);
+          margin: 1rem;
+          &_image {
+          }
+          &_bottom {
+            &Name{
+              font-size: 1.7rem;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin: 0 0.3rem;
+            }
+            &Rent {
+              font-size: 2rem;
+            }
+            &Description {
+              height: 4.5rem;
+              overflow: scroll;
+              font-size: 1.5rem;
+            }
+          }
+        }
+        &-item:hover {
+          color: darken($darkgray, 20%);
+          opacity: 0.8;
+        }
+      }
+    }
   }
 }
 
-
-
-
-
-
-p {
-  color: blue;
-  font-family: "YuKyokasho";
-  font-size: 2rem;
-}

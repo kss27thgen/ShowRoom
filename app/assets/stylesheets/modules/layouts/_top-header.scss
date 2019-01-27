@@ -1,5 +1,5 @@
 .top-header_wrapper {
-  background: lighten($lightgray, 13%);
+  background: lighten($lightgray, 10%);
   .top-header-upper {
     padding-bottom: 2rem;
     &_left {
@@ -28,7 +28,7 @@
     }
   }
   .top-header-bottom {
-    background: lighten($lightgray, 8%);
+    background: lighten($darkgray, 6%);
     &-menu {
       display: flex;
       justify-content: space-around;
@@ -38,14 +38,16 @@
       &-item {
         font-size: 1.7rem;
         text-decoration: none;
-        color: black;
+        color: lighten(lightgray, 20%);
         padding: 1.5rem 4rem;
         height: 5rem;
         line-height: 5rem;
       }
       &-item:hover {
-        background: lighten($lightgray, 12%);
-        border-bottom: 0.2rem solid gray;
+        background: lighten($lightgray, 1%);
+        color: black;
+        border-bottom: 0.3rem solid navy;
+        opacity: 0.6;
       }
     }
   }

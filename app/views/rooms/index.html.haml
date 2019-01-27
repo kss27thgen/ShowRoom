@@ -4,21 +4,17 @@
   .rooms-index_main
     .rooms-index_main-bxslider
       = render "rooms/bxslider"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%p
-  - @rooms.each do |room|
-    = link_to room.name, room_path(room)
-    = "#{room.ward}区"
+    .rooms-index_main-inner
+      .roomIndex
+        - @rooms.each do |room|
+          = link_to room_path(room), class: "roomIndex-link" do
+            .roomIndex-item
+              .roomIndex-item_image
+                = image_tag room.room_images.first.image.url(:index)
+              .roomIndex-item_bottom
+                .roomIndex-item_bottomName
+                  = room.name
+                .roomIndex-item_bottomRent
+                  = room.rent
+                .roomIndex-item_bottomDescription
+                  = room.description

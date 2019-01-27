@@ -1,7 +1,9 @@
-.room_name
-  = @room.name
-.room_image
-  - @images.each do |image|
-    = image_tag image.image.url
+.rooms_show
+  .room_name
+    = @room.name
+  .room_image
+    - @images.each do |image|
+      = image_tag image.image.url(:index)
+      = image_tag image.image.url(:thumb)
 
-= link_to "編集", edit_room_path(@room)
+  = link_to "編集", edit_room_path(@room)

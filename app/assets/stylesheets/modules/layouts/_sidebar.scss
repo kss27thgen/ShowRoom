@@ -7,9 +7,12 @@
       font-size: 1.7rem;
       font-family: Gothic;
       margin-bottom: 3rem;
-      color: darken($darkgray, 15%);
+      color: black;
       display: block;
       text-decoration: none;
+    }
+    &-item:hover {
+      opacity: 0.5;
     }
   }
 }
