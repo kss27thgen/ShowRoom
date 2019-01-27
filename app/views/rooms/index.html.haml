@@ -1,3 +1,5 @@
+= render "layouts/bxslider"
+
 %p
   - @rooms.each do |room|
     = link_to room.name, room_path(room)
