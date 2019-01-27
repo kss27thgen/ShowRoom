@@ -1,0 +1,15 @@
+.sign_up
+  = link_to "サインアップ", new_user_registration_path
+.sign_in
+  = link_to "サインイン", new_user_session_path
+.user_edit
+  = link_to "ユーザーエディット", edit_user_registration_path
+.sign_in
+  = link_to "サインアウト", destroy_user_session_path, method: :delete
+.line
+  "------------------------------"
+.rooms_post
+  = link_to "部屋投稿", new_room_path
+.rooms_edit
+  = link_to "部屋一覧", rooms_path
+
