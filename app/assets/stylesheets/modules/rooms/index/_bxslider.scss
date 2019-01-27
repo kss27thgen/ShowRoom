@@ -1,0 +1,15 @@
+.slider-wrapper {
+  background: lighten($lightgray, 10%);
+  width: 70rem;
+  margin: 7rem auto 0;
+  padding: 2rem 2rem 0.1rem;
+  .slider {
+    &_item {
+    }
+    &_image {
+      width: 50rem;
+      height: 30rem;
+      margin: 0 auto;
+    }
+  }
+}

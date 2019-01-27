@@ -1,0 +1,54 @@
+.top-header_wrapper {
+  background: lighten($lightgray, 10%);
+  .top-header-upper {
+    padding-bottom: 2rem;
+    &_left {
+      float: left;
+      margin: 3rem 0 0 7rem;
+      &-title {
+        font-size: 6rem;
+        font-family: "Century Gothic";
+      }
+    }
+    &_right {
+      float: right;
+      display: flex;
+      margin: 7rem 1rem 0;
+      &-item {
+        margin: 1rem;
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: black;
+        font-family: "Century Gothic";
+      }
+      &-item:hover {
+        opacity: 0.7;
+        border-bottom: 0.2rem solid red;
+      }
+    }
+  }
+  .top-header-bottom {
+    background: lighten($darkgray, 6%);
+    &-menu {
+      display: flex;
+      justify-content: space-around;
+      width: 600px;
+      margin: 0 auto;
+      text-align: center;
+      &-item {
+        font-size: 1.7rem;
+        text-decoration: none;
+        color: lighten(lightgray, 20%);
+        padding: 1.5rem 4rem;
+        height: 5rem;
+        line-height: 5rem;
+      }
+      &-item:hover {
+        background: lighten($lightgray, 1%);
+        color: black;
+        border-bottom: 0.3rem solid navy;
+        opacity: 0.6;
+      }
+    }
+  }
+}
