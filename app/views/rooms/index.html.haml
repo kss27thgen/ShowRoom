@@ -15,6 +15,6 @@
                 .roomIndex-item_bottomName
                   = room.name
                 .roomIndex-item_bottomRent
-                  = room.rent
+                  = "#{room.rent.to_s(:delimited)} / m"
                 .roomIndex-item_bottomDescription
                   = room.description
