@@ -1,0 +1,15 @@
+.sidebar-wrapper {
+  .sidebar-list {
+    width: 25rem;
+    margin: 7rem auto 0;
+    text-align: center;
+    &-item {
+      font-size: 1.7rem;
+      font-family: Gothic;
+      margin-bottom: 3rem;
+      color: darken($darkgray, 15%);
+      display: block;
+      text-decoration: none;
+    }
+  }
+}
