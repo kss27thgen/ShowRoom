@@ -1,0 +1,56 @@
+.rooms-show {
+  display: flex;
+  &_sidebar {
+    width: 100vw-70;
+    background: lighten($lightgray, 15%);
+  }
+  &_main {
+    width: 100vw-30;
+    .roomsShowMain {
+      width: 90%;
+      min-height: 100rem;
+      margin: 0 auto;
+      padding: 7rem 0;
+      &_name {
+        font-size: 2.7rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+      &_image {
+        display: flex;
+        &Left {
+          width: 79%;
+        }
+        &Right {
+          width: 21%;
+          height: 55rem;
+          padding: 1rem 0 0 1rem;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          &Item {
+            cursor: pointer;
+            margin: 0.2rem;
+          }
+          &Item:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+      &_descripion {
+        width: 80%;
+        margin: 3rem auto;
+        border: 1px gray ridge;
+        &Title {
+          font-size: 2rem;
+          font-weight: bold;
+          text-align: center;
+          margin: 0 0 3rem;
+        }
+        &Content {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

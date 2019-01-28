@@ -1,0 +1,43 @@
+= link_to "編集", edit_room_path(@room)
+.roomsShow-sidebar
+  .roomsShow-sidebar-lists
+    .roomsShow-sidebar-listsItem
+      .roomsShow-sidebar-listsItem_title
+        賃料
+      .roomsShow-sidebar-listsItem_value
+        = "#{@room.rent.to_s(:delimited)}円 / month"
+    .roomsShow-sidebar-listsItem
+      .roomsShow-sidebar-listsItem_title
+        管理費
+      .roomsShow-sidebar-listsItem_value
+        ー
+    .roomsShow-sidebar-listsItem
+      .roomsShow-sidebar-listsItem_title
+        面積
+      .roomsShow-sidebar-listsItem_value
+        = @room.area
+    .roomsShow-sidebar-listsItem
+      .roomsShow-sidebar-listsItem_title
+        間取り
+      .roomsShow-sidebar-listsItem_value
+        = @room.room_type
+    .roomsShow-sidebar-listsItem
+      .roomsShow-sidebar-listsItem_title
+        築年
+      .roomsShow-sidebar-listsItem_value
+        = @room.since
+    .roomsShow-sidebar-listsItem
+      .roomsShow-sidebar-listsItem_title
+        〒
+      .roomsShow-sidebar-listsItem_value
+        = @room.zipcode
+    .roomsShow-sidebar-listsItem
+      .roomsShow-sidebar-listsItem_title
+        所在地
+      .roomsShow-sidebar-listsItem_value
+        = @room.address
+    .roomsShow-sidebar-listsItemLarge
+      .roomsShow-sidebar-listsItemLarge_title
+        設備
+      .roomsShow-sidebar-listsItemLarge_value
+        = @room.facility
