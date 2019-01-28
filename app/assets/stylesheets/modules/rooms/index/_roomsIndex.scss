@@ -20,7 +20,7 @@
         }
         &-item {
           width: 30rem;
-          height: 30rem;
+          height: 36rem;
           background: lighten($lightgray, 20%);
           margin: 1rem;
           &_image {
@@ -35,9 +35,11 @@
             }
             &Rent {
               font-size: 2rem;
+              margin-right: 3rem;
+              text-align: right;
             }
-            &Description {
-              height: 4.5rem;
+            &Facility {
+              height: 9.5rem;
               overflow: scroll;
               font-size: 1.5rem;
             }

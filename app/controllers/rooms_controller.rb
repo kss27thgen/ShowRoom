@@ -16,6 +16,7 @@ class RoomsController < ApplicationController
 
   def show
     @images = @room.room_images
+    @a_image = @room.room_images.first
   end
 
   def edit

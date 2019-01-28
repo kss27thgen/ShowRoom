@@ -1,6 +1,6 @@
 .rooms-index
   .rooms-index_sidebar
-    = render "layouts/sidebar"
+    = render "layouts/index_sidebar"
   .rooms-index_main
     .rooms-index_main-bxslider
       = render "rooms/bxslider"
@@ -15,6 +15,6 @@
                 .roomIndex-item_bottomName
                   = room.name
                 .roomIndex-item_bottomRent
-                  = room.rent
-                .roomIndex-item_bottomDescription
-                  = room.description
+                  = "#{room.rent.to_s(:delimited)} 円/ month"
+                .roomIndex-item_bottomFacility
+                  = room.facility

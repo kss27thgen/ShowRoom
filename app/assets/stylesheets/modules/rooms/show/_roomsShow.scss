@@ -1,0 +1,85 @@
+.rooms-show {
+  display: flex;
+  &_sidebar {
+    width: 100vw-70;
+    background: lighten($lightgray, 12%);
+  }
+  &_main {
+    width: 100vw-30;
+    .roomsShowMain {
+      width: 90%;
+      min-height: 100rem;
+      margin: 0 auto;
+      padding: 7rem 0;
+      &_name {
+        font-size: 2.7rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+      &_image {
+        display: flex;
+        &Left {
+          width: 79%;
+          cursor: pointer;
+        }
+        &Right {
+          width: 21%;
+          height: 55rem;
+          overflow: scroll;
+          padding: 1rem 0 0 1rem;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          &Item {
+            cursor: pointer;
+            margin: 0.2rem;
+          }
+          &Item:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+      &_descripion {
+        width: 70%;
+        margin: 3rem auto;
+        border: 1px gray ridge;
+        padding: 5rem;
+        &Title {
+          font-size: 2rem;
+          font-weight: bold;
+          text-align: center;
+          margin: 0 0 3rem;
+        }
+        &Content {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.rooms-shows {
+  position: fixed;
+  top: 7rem;
+  left: 23rem;
+  z-index: 3;
+}
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+#mask.hidden {
+  // background: rgba(0, 0, 0, 0.4);
+  // position: fixed;
+  // top: 0;
+  // bottom: 0;
+  // right: 0;
+  // left: 0;
+  // z-index: 1;
+  display: none;
+}

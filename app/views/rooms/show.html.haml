@@ -1,9 +1,22 @@
-.rooms_show
-  .room_name
-    = @room.name
-  .room_image
-    - @images.each do |image|
-      = image_tag image.image.url(:index)
-      = image_tag image.image.url(:thumb)
+.rooms-show
+  .rooms-show_sidebar
+    = render "layouts/show_sidebar"
+  .rooms-show_main
+    .roomsShowMain
+      .roomsShowMain_name
+        = @room.name
+      .roomsShowMain_image
+        .roomsShowMain_imageLeft
+          = image_tag @a_image.image.url(:show), class: "roomsShowMain_imageLeftItem"
+        .roomsShowMain_imageRight
+          - @images.each do |image|
+            .roomsShowMain_imageRightItem{data: {imageid: image.id}}
+              = image_tag image.image.url(:thumb)
+      .roomsShowMain_descripion
+        .roomsShowMain_descripionTitle
+          〜物件紹介〜
+        .roomsShowMain_descripionContent
+          = simple_format @room.description
 
-  = link_to "編集", edit_room_path(@room)
+.rooms-shows
+#mask.hidden

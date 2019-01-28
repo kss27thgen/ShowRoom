@@ -10,7 +10,7 @@
 
 // rooms
 @import "modules/rooms/rooms_new";
-@import "modules/rooms/rooms_show";
-@import "modules/rooms/index/rooms_index";
+@import "modules/rooms/show/roomsShow";
+@import "modules/rooms/show/roomsShow_sidebar";
+@import "modules/rooms/index/roomsIndex";
 @import "modules/rooms/index//bxslider";
-
