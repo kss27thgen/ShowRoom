@@ -24,12 +24,13 @@
         }
         &Right {
           width: 21%;
-          height: 55rem;
+          height: 50rem;
           overflow: scroll;
-          padding: 1rem 0 0 1rem;
+          margin-top: 2rem;
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
+          background: #FFFFF0;
           &Item {
             cursor: pointer;
             margin: 0.2rem;
@@ -45,10 +46,11 @@
         border: 1px gray ridge;
         padding: 5rem;
         &Title {
-          font-size: 2rem;
+          font-size: 2.5rem;
           font-weight: bold;
           text-align: center;
           margin: 0 0 3rem;
+          font-family: YuKyokasho;
         }
         &Content {
           font-size: 1.5rem;
@@ -60,9 +62,10 @@
 
 .rooms-shows {
   position: fixed;
-  top: 7rem;
+  top: 5rem;
   left: 23rem;
   z-index: 3;
+  user-select: none;
 }
 #mask {
   background: rgba(0, 0, 0, 0.4);
