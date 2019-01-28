@@ -7,8 +7,7 @@
         = @room.name
       .roomsShowMain_image
         .roomsShowMain_imageLeft
-          - @images.each do |image|
-            = image_tag image.image.url(:show)
+          = image_tag @a_image.image.url(:show)
         .roomsShowMain_imageRight
           - @images.each do |image|
             .roomsShowMain_imageRightItem{data: {imageid: image.id}}
