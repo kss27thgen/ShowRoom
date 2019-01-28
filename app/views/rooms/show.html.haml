@@ -7,7 +7,7 @@
         = @room.name
       .roomsShowMain_image
         .roomsShowMain_imageLeft
-          = image_tag @a_image.image.url(:show)
+          = image_tag @a_image.image.url(:show), class: "roomsShowMain_imageLeftItem"
         .roomsShowMain_imageRight
           - @images.each do |image|
             .roomsShowMain_imageRightItem{data: {imageid: image.id}}
@@ -17,3 +17,6 @@
           〜物件紹介〜
         .roomsShowMain_descripionContent
           = simple_format @room.description
+
+.rooms-shows
+#mask.hidden

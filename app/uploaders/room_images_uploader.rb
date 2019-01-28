@@ -34,7 +34,7 @@ class RoomImagesUploader < CarrierWave::Uploader::Base
     process resize_and_pad: [700, 550, background = "#FFFFFF", gravity = 'Center']
   end
   version :show_modal do
-    process resize_and_pad: [900, 700, background = "#FFFFFF", gravity = 'Center']
+    process resize_and_pad: [1000, 700, background = "#FFFFFF", gravity = 'Center']
   end
   # def scale(width, height)
   #   # do something
