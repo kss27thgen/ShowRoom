@@ -2,7 +2,7 @@
   display: flex;
   &_sidebar {
     width: 100vw-70;
-    background: lighten($lightgray, 12%);
+    background: lighten($lightgray, 8%);
   }
   &_main {
     width: 100vw-30;
@@ -23,14 +23,15 @@
           cursor: pointer;
         }
         &Right {
-          width: 21%;
+          width: 20.5%;
           height: 50rem;
           overflow: scroll;
           margin-top: 2rem;
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
-          background: #FFFFF0;
+          background: lighten($lightgray, 11%);
+          border-radius: 0.5rem;
           &Item {
             cursor: pointer;
             margin: 0.2rem;
@@ -43,8 +44,9 @@
       &_descripion {
         width: 70%;
         margin: 3rem auto;
-        border: 1px gray ridge;
+        border: 1px lightgray ridge;
         padding: 5rem;
+        border-radius: 0.5rem;
         &Title {
           font-size: 2.5rem;
           font-weight: bold;

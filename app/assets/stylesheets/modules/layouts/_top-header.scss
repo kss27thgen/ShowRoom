@@ -1,5 +1,5 @@
 .top-header_wrapper {
-  background: lighten($lightgray, 10%);
+  background: lighten($lightgray, 15%);
   .top-header-upper {
     padding-bottom: 2rem;
     &_left {
@@ -46,8 +46,8 @@
       &-item:hover {
         background: lighten($lightgray, 1%);
         color: black;
-        border-bottom: 0.3rem solid navy;
-        opacity: 0.6;
+        border-bottom: 0.3rem solid blue;
+        opacity: 0.5;
       }
     }
   }
