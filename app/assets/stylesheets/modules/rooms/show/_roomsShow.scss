@@ -2,7 +2,7 @@
   display: flex;
   &_sidebar {
     width: 100vw-70;
-    background: lighten($lightgray, 12%);
+    background: lighten($lightgray, 8%);
   }
   &_main {
     width: 100vw-30;
@@ -10,7 +10,7 @@
       width: 90%;
       min-height: 100rem;
       margin: 0 auto;
-      padding: 7rem 0;
+      padding: 7rem 0 2rem;
       &_name {
         font-size: 2.7rem;
         font-weight: bold;
@@ -23,14 +23,15 @@
           cursor: pointer;
         }
         &Right {
-          width: 21%;
+          width: 20.5%;
           height: 50rem;
           overflow: scroll;
           margin-top: 2rem;
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
-          background: #FFFFF0;
+          background: lighten($lightgray, 11%);
+          border-radius: 0.5rem;
           &Item {
             cursor: pointer;
             margin: 0.2rem;
@@ -43,14 +44,14 @@
       &_descripion {
         width: 70%;
         margin: 3rem auto;
-        border: 1px gray ridge;
-        padding: 5rem;
+        border: 1px lightgray ridge;
+        padding: 4rem;
+        border-radius: 0.5rem;
         &Title {
           font-size: 2.5rem;
           font-weight: bold;
           text-align: center;
           margin: 0 0 3rem;
-          font-family: YuKyokasho;
         }
         &Content {
           font-size: 1.5rem;

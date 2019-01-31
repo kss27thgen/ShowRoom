@@ -1,5 +1,5 @@
 class RoomsController < ApplicationController
-  before_action :set_room, only: [:show, :edit, :update]
+  before_action :set_room, only: [:show, :edit, :update, :destroy]
 
   def new
     @room = Room.new
@@ -24,9 +24,9 @@ class RoomsController < ApplicationController
 
   def update
     if @room.update(room_params)
-      redirect_to root_path, notice:"商品を編集しました"
+      redirect_to root_path, notice:"部屋を編集しました"
     else
-      render :edit, alert:"商品が編集できませんでした。"
+      render :edit, alert:"部屋が編集できませんでした。"
     end
   end
 
@@ -34,6 +34,14 @@ class RoomsController < ApplicationController
     @rooms = Room.all
   end
 
+  def destroy
+    if @room.destroy
+      redirect_to rooms_path, notice:"部屋を削除しました"
+    else
+      render :show, alert:"部屋が削除できませんでした。"
+    end
+
+  end
 
 
 

@@ -6,7 +6,7 @@
 
 /*modules*/
 @import "modules/layouts/top-header";
-@import "modules/layouts/sidebar";
+@import "modules/layouts/top-footer";
 
 // rooms
 @import "modules/rooms/rooms_new";
@@ -14,3 +14,4 @@
 @import "modules/rooms/show/roomsShow_sidebar";
 @import "modules/rooms/index/roomsIndex";
 @import "modules/rooms/index//bxslider";
+@import "modules/rooms/index/roomsIndex_sidebar";

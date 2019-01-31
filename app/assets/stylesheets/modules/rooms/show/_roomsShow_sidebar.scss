@@ -2,38 +2,39 @@
   font-size: 1.3rem;
   &-lists {
     width: 30rem;
-    margin: 10rem 5rem 0 10rem;
-    border: 1px solid gray;
+    margin: 10rem 5rem 0 7rem;
+    border: 1px solid lightgray;
     border-radius: 0.5rem;
+    background: white;
     &Item {
       height: 6rem;
       line-height: 6rem;
-      border-bottom: 1px solid gray;
+      border-bottom: 1px solid lightgray;
       display: flex;
       &_title {
         width: 25%;
         margin-left: 1rem;
         font-size: 1.2rem;
+        font-weight: bold;
       }
       &_value {
         width: 75%;
-        font-weight: bold;
         overflow: scroll;
       }
     }
     &ItemLarge {
-      height: 13rem;
+      height: 10rem;
       border-bottom: 1px solid gray;
-      padding: 2rem 0;
+      padding: 2rem 0 1rem;
       display: flex;
       &_title {
         width: 25%;
         margin-left: 1rem;
         font-size: 1.2rem;
+        font-weight: bold;
       }
       &_value {
         width: 75%;
-        font-weight: bold;
         overflow: scroll;
       }
     }
