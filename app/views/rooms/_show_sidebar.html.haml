@@ -1,5 +1,6 @@
-= link_to "編集", edit_room_path(@room)
-= link_to "削除", "/rooms/#{@room.id}", method: :delete
+- if current_user.id === 3
+  = link_to "編集", edit_room_path(@room)
+  = link_to "削除", "/rooms/#{@room.id}", method: :delete
 .roomsShow-sidebar
   .roomsShow-sidebar-lists
     .roomsShow-sidebar-listsItem
