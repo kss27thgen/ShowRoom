@@ -18,5 +18,22 @@
         .roomsShowMain_descripionContent
           = simple_format @room.description
 
+      #map{:style => "width: 600px; height: 500px;"}
+
 .rooms-shows
 #mask.hidden
+
+:javascript
+  handler = Gmaps.build('Google');
+      handler.buildMap({ provider: { scrollwheel: true }, internal: {id: 'map'}}, function(){
+        markers = handler.addMarkers([
+          {
+            "lat": #{@room.latitude},
+            "lng": #{@room.longitude},
+        "infowindow": '<p>#{@room.address}</p><p>#{link_to "Googleマップで見る" ,"https://maps.google.co.jp/maps?q=loc:\#{@room.latitude},\#{@room.longitude}&iwloc=J",target: "_blank"}</p>'
+          }
+        ]);
+        handler.bounds.extendWith(markers);
+        handler.fitMapToBounds();
+        handler.getMap().setZoom(17);
+      });

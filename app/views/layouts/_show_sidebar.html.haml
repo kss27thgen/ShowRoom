@@ -5,7 +5,7 @@
       .roomsShow-sidebar-listsItem_title
         賃料
       .roomsShow-sidebar-listsItem_value
-        = "#{@room.rent.to_s(:delimited)}円 / month"
+        = "#{@room.rent&.to_s(:delimited)}円 / month"
     .roomsShow-sidebar-listsItem
       .roomsShow-sidebar-listsItem_title
         管理費
