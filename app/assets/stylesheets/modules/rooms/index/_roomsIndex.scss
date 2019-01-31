@@ -2,7 +2,7 @@
   display: flex;
   &_sidebar {
     width: 100vw-80;
-    background: lighten($lightgray, 1%);
+    background: lighten($lightgray, 7%);
   }
   &_main {
     width: 100vw-20;
@@ -10,10 +10,11 @@
     &-inner {
       .roomIndex {
         margin: 9.5rem;
-        background: lighten($lightgray, 15%);
+        background: lighten($lightgray, 14%);
         display: flex;
         flex-wrap: wrap;
         align-content: flex-start;
+        border-radius: 0.5rem;
         &-link {
           text-decoration: none;
           color: black;
