@@ -17,15 +17,13 @@
           〜物件紹介〜
         .roomsShowMain_descripionContent
           = simple_format @room.description
-
-      #map{:style => "width: 600px; height: 500px;"}
-
+      #g_map
 .rooms-shows
 #mask.hidden
 
 :javascript
   handler = Gmaps.build('Google');
-      handler.buildMap({ provider: { scrollwheel: true }, internal: {id: 'map'}}, function(){
+      handler.buildMap({ provider: { scrollwheel: true }, internal: {id: 'g_map'}}, function(){
         markers = handler.addMarkers([
           {
             "lat": #{@room.latitude},
@@ -35,5 +33,5 @@
         ]);
         handler.bounds.extendWith(markers);
         handler.fitMapToBounds();
-        handler.getMap().setZoom(17);
+        handler.getMap().setZoom(16);
       });
