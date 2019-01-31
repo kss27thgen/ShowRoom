@@ -14,16 +14,19 @@
               = image_tag image.image.url(:thumb)
       .roomsShowMain_descripion
         .roomsShowMain_descripionTitle
-          〜物件紹介〜
+          物件紹介
         .roomsShowMain_descripionContent
           = simple_format @room.description
-      #g_map
+      .g-map
+        .g-map_title
+          MAP
+        #g-map
 .rooms-shows
 #mask.hidden
 
 :javascript
   handler = Gmaps.build('Google');
-      handler.buildMap({ provider: { scrollwheel: true }, internal: {id: 'g_map'}}, function(){
+      handler.buildMap({ provider: { scrollwheel: true }, internal: {id: 'g-map'}}, function(){
         markers = handler.addMarkers([
           {
             "lat": #{@room.latitude},
