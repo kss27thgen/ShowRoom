@@ -1,20 +1,9 @@
 .rooms-index
   .rooms-index_sidebar
-    = render "rooms/index_sidebar"
+    = render "index_sidebar"
   .rooms-index_main
     .rooms-index_main-bxslider
-      = render "rooms/bxslider"
+      = render "index_bxslider"
     .rooms-index_main-inner
       .roomIndex
-        - @rooms.each do |room|
-          = link_to room_path(room), class: "roomIndex-link" do
-            .roomIndex-item
-              .roomIndex-item_image
-                = image_tag room.room_images.first.image.url(:index)
-              .roomIndex-item_bottom
-                .roomIndex-item_bottomName
-                  = room.name
-                .roomIndex-item_bottomRent
-                  = "#{room.rent&.to_s(:delimited)} 円/ month"
-                .roomIndex-item_bottomFacility
-                  = room.facility
+        = render partial: "index_roomList", collection: @rooms, as: :room
