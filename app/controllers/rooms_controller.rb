@@ -31,7 +31,7 @@ class RoomsController < ApplicationController
   end
 
   def index
-    @rooms = Room.all
+    @rooms = Room.all.shuffle
   end
 
   def destroy
@@ -42,8 +42,6 @@ class RoomsController < ApplicationController
     end
 
   end
-
-
 
 private
   def set_room
