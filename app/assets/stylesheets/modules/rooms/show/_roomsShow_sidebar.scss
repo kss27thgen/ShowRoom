@@ -21,6 +21,9 @@
         width: 75%;
         overflow: scroll;
       }
+      &Map_value {
+        cursor: pointer;
+      }
     }
     &ItemLarge {
       height: 10rem;

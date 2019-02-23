@@ -28,21 +28,22 @@
           }
           &_bottom {
             &Name{
-              font-size: 1.7rem;
+              font-size: 1.8rem;
               white-space: nowrap;
               overflow: hidden;
               text-overflow: ellipsis;
               margin: 0 0.3rem;
             }
             &Rent {
-              font-size: 2rem;
-              margin-right: 3rem;
+              font-size: 1.6rem;
+              margin-right: 2rem;
               text-align: right;
             }
             &Facility {
               height: 9.5rem;
               overflow: scroll;
               font-size: 1.5rem;
+              padding: 0 1rem;
             }
           }
         }
