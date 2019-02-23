@@ -1,6 +1,6 @@
 .rooms-show
   .rooms-show_sidebar
-    = render "rooms/show_sidebar"
+    = render "show_sidebar"
   .rooms-show_main
     .roomsShowMain
       .roomsShowMain_name
@@ -9,9 +9,7 @@
         .roomsShowMain_imageLeft
           = image_tag @a_image.image.url(:show), class: "roomsShowMain_imageLeftItem"
         .roomsShowMain_imageRight
-          - @images.each do |image|
-            .roomsShowMain_imageRightItem{data: {imageid: image.id}}
-              = image_tag image.image.url(:thumb)
+          = render partial: "show_photoList", collection: @images, as: :image
       .roomsShowMain_descripion
         .roomsShowMain_descripionTitle
           物件紹介
@@ -36,5 +34,5 @@
         ]);
         handler.bounds.extendWith(markers);
         handler.fitMapToBounds();
-        handler.getMap().setZoom(16);
+        handler.getMap().setZoom(15);
       });

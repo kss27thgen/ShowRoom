@@ -1,2 +1,37 @@
 .top-footer
-  .top-footer-upper
+  .topFootUp
+    %ul.topFootUp_tels
+      %li.topFootUp_tels-item
+        代表: 03-6421-7595
+      %li.topFootUp_tels-item
+        杉並支店: 03-6415-1432
+      %li.topFootUp_tels-item
+        大宮支店: 050-5118-7132
+    .topFootUp_hours
+      10:00 - 19:00
+      %span.topFootUp_hours-tail ( 定休日：水曜日、祝祭日、GW )
+    %ul.topFootUp_links
+      %li
+        = link_to "#", class: "topFootUp_links-item" do
+          = fa_icon 'fa-twitter', class: 'fa-twitter fa-3x'
+      %li
+        = link_to "#", class: "topFootUp_links-item" do
+          = fa_icon 'fa-tumblr-square', class: 'fa-tumblr-square fa-3x'
+      %li
+        = link_to "#", class: "topFootUp_links-item" do
+          = fa_icon 'fa-facebook-square', class: 'fa-facebook-square fa-3x'
+      %li
+        = link_to "#", class: "topFootUp_links-item" do
+          = fa_icon 'fa-instagram', class: 'fa-instagram fa-3x'
+  .topFootBot
+    %ul.topFootBot_left
+      %li
+        = link_to "サイトマップ", "#", class: "topFootBot_left-item"
+      %li
+        = link_to "プライバシーポリシー", "#", class: "topFootBot_left-item"
+      %li
+        = link_to "企業情報", "#", class: "topFootBot_left-item"
+      %li
+        = link_to "個人情報の取り扱いについて", "#", class: "topFootBot_left-item"
+    .topFootBot_right
+      Copyright(C) ShowRoom
