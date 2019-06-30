@@ -50,8 +50,7 @@ gem 'erb2haml'
 gem 'pry-rails'
 gem 'pry-byebug'
 # user authentication
-gem 'devise'
-
+gem "devise", ">= 4.6.0"
 # google_map
 gem "gmaps4rails"
 gem "geocoder"
